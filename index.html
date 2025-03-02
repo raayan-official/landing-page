@@ -3,129 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing-Page</title>
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header>
-    <div class="first">
-        <div class="icon">
-            <ul class="icon-list">
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-facebook"></i></li>
-                <li><i class="fa-brands fa-youtube"></i></li>
-                <li><i class="fa-brands fa-pinterest"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-            </ul>
-        </div>
-        <div class="contact">
-            <span><i class="fa-solid fa-phone"></i></span>
-            <span>+91 6290983238</span>
-            <span><i class="fa-solid fa-envelope"></i></span>
-            <span>rajeshdas032000@gmail.com</span>
-        </div>
+<body class="font-sans bg-gray-100">
 
-
-
-        
-        <div class="btn">
-            <button>REQUEST A CONSALT</button>
+<!-- Header -->
+<header class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
         </div>
+        <div class="flex items-center space-x-6">
+            <span><i class="fas fa-phone"></i> +91 6290983238</span>
+            <span><i class="fas fa-envelope"></i> rajeshdas032000@gmail.com</span>
+        </div>
+        <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">REQUEST A CONSULT</button>
     </div>
-    <nav class="navbar">
-        <div class="logo">
-            <span>LANDING-PAGE</span>
-        </div>
-        <div class="navlist">
-            <ul class="nav-lists">
-                <li>Home</li>
-                <li>Blog</li>
-                <li>Page</li>
-                <li>Services</li>
-                <li>Contact</li>
-                <li>Buy Now</li>
-            </ul>
-        </div>
-        <div class="search">
-            <input type="search" placeholder="Search Here!">
-            <div class="icon">
-                <i class="fa-solid fa-magnifying-glass icon"></i>
-            </div>
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">LANDING PAGE</div>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="hover:text-red-500">Home</a></li>
+            <li><a href="#" class="hover:text-red-500">Blog</a></li>
+            <li><a href="#" class="hover:text-red-500">Page</a></li>
+            <li><a href="#" class="hover:text-red-500">Services</a></li>
+            <li><a href="#" class="hover:text-red-500">Contact</a></li>
+            <li><a href="#" class="hover:text-red-500">Buy Now</a></li>
+        </ul>
+        <div class="flex items-center">
+            <input type="search" placeholder="Search Here!" class="px-4 py-2 rounded-l">
+            <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-r"><i class="fas fa-search"></i></button>
         </div>
     </nav>
 </header>
-<div class="main">
-    <div class="work">
-        <div class="empty"></div>
-        <div class="pera">
-            <div class="text">
-                <span>WE ARE CREATIVE</span>
-            <h1>CREATIVE DIGITAL AGENCYTIVE DIGITAL AGENCYS</h1>
-            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam officia explicabo reprehenderit praesentium recusandae commodi est ullam, omnis ab quasi. Tempora Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusantium soluta dolor vitae autem voluptate maxime quos facilis, sint, voluptatibus debitis suscipit placeat explicabo reiciendis omnis laboriosam officiis voluptatem delectus.
-            </P>
-            </div>
-            <div class="button">
-                <button class="color">READ MORE</button>
-                <button class="colorless">REQUEST A CONSULTS</button>
+
+<!-- Hero Section -->
+<section class="bg-cover bg-center h-screen" style="background-image: url('bg4.jpeg');">
+    <div class="container mx-auto px-4 h-full flex items-center">
+        <div class="text-white text-center max-w-2xl mx-auto">
+            <span class="text-lg font-semibold">WE ARE CREATIVE</span>
+            <h1 class="text-5xl font-bold mt-4">CREATIVE DIGITAL AGENCY</h1>
+            <p class="mt-6 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="mt-8 space-x-4">
+                <button class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded">READ MORE</button>
+                <button class="bg-transparent border border-white hover:bg-white hover:text-gray-900 text-white px-6 py-3 rounded">REQUEST A CONSULT</button>
             </div>
         </div>
     </div>
-</div>
-<div class="mid">
-    <div class="one">
-        <i class="fa-solid fa-rocket"></i>
-        <span>LAUNCH BUSINESS</span>
-        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio illum reprehenderit, doloribus eum voluptatum</P>
-    </div>
+</section>
 
-    <div class="one">
-        <i class="fa-solid fa-headphones"></i>
-        <span>ONLINE SUPPORT TEAM</span>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed totam quaerat modi, nemo atque qui repu</P>
-    </div>
-   
-    <div class="one">
-        
-        <i class="fa-solid fa-clock"></i>
-        <span>TIME MANAGEMENT</span>
-        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum sint sit sed omnis culpa quibusdam odi</P>
-    </div>
-</div>
-
-<div class="section">
-    <div class="left">
-        <h1>ABOUT US</h1>
-        <div class="line"></div>
-        <h3>15 years we passionate about achieving better results for our clients</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur impedit, eius perspiciatis facilis repellat sed magnam mollitia tempora quo. Ratione id in aliquam exercitationem nobis aperiam laboriosam quibusdam quaerat corporis. Ut itaque officiis eius tenetur tempore doloribus libero delectus explicabo laboriosam inventore, sed quibusdam facere nostrum amet neque voluptatem asperiores maxime incidunt voluptatibus. Commodi dolore sed facilis possimus</p>
-        <div class="read-more">
-            <button>READ MORE</button>
+<!-- Features Section -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <i class="fas fa-rocket text-4xl text-red-500 mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">LAUNCH BUSINESS</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <i class="fas fa-headphones text-4xl text-red-500 mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">ONLINE SUPPORT TEAM</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <i class="fas fa-clock text-4xl text-red-500 mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">TIME MANAGEMENT</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
-    <div class="right">
-        <div class="box"></div>
-    </div>
-</div>
+</section>
 
-<div class="another">
-    <div class="top">
-        <h1>OUR SERVICES</h1>
-        <div class="empty-line"></div>
-        <div class="services">
-            <div class="box-1">
-                <img src="comp.jpeg" alt="">
+<!-- About Us Section -->
+<section class="py-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+            <h1 class="text-3xl font-bold mb-4">ABOUT US</h1>
+            <div class="w-12 h-1 bg-red-500 mb-6"></div>
+            <h3 class="text-xl font-semibold mb-6">15 years we passionate about achieving better results for our clients</h3>
+            <p class="text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded">READ MORE</button>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+            <img src="bg4.jpeg" alt="About Us" class="rounded-lg shadow-lg">
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+        <h1 class="text-3xl font-bold text-center mb-8">OUR SERVICES</h1>
+        <div class="w-12 h-1 bg-red-500 mx-auto mb-12"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="comp.jpeg" alt="Service 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold mb-4">Service 1</h3>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="box-1 box-2">
-                <img src="computer.webp" alt="">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="computer.webp" alt="Service 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold mb-4">Service 2</h3>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="box-1 box-3">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="bg4.jpeg" alt="Service 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-bold mb-4">Service 3</h3>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
     </div>
-    <div class="bot"></div>
-</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+            <h3 class="text-xl font-bold mb-4">About Us</h3>
+            <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="text-gray-400 hover:text-red-500">Home</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-red-500">Blog</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-red-500">Page</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-red-500">Services</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-red-500">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <p class="text-gray-400">Email: rajeshdas032000@gmail.com</p>
+            <p class="text-gray-400">Phone: +91 6290983238</p>
+        </div>
+    </div>
+    <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">&copy; 2023 Landing Page. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>
